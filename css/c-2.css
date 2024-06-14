@@ -1,0 +1,232 @@
+@charset "utf-8";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    display: block;
+}
+main {
+    position: relative;
+    width: 1000px;
+    height: 650px;
+
+}
+header {
+    background-color: lightgray;
+    width: 200px;
+    height: 650px;
+}
+.headerlogo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}.headerlogo > img {
+    width: 200px;
+    height: 40px;
+}
+.menu {
+
+    text-align: center;
+}
+
+.mainMenu > a {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    color: black;
+}
+.mainMenu > a:hover {
+    background-color: lightpink;
+}
+.subMenu {
+    display: none;
+    background-color: #fff;
+    z-index: 1;
+}
+.subMenu > li {
+    padding-bottom: 10px;
+}
+.subMenu > li:hover {
+    background-color: lightpink;
+}
+.subMenu > li > a {
+    padding: 5px;
+    color: black;
+}
+.bodyWrap {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 800px;
+    height: 650px;
+
+}
+.slide {
+    position: relative;
+    width: 800px;
+    height: 350px;
+    overflow: hidden;
+}
+.slide > img {
+    position: absolute;
+    top: 0;
+    left: 100px;
+}
+.imgText {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    background-color: rgba(143, 143, 143, 0.3);
+    padding: 20px 40px;
+    color: white;
+}
+.contents {
+    overflow: hidden;
+    width: 800px;
+    height: 200px;
+    display: flex;
+}
+.contents div {
+    width: 33.3%;
+}
+.notice {
+    position: relative;
+    background-color: #fff;
+
+}
+.notice > a {
+    background-color: lightgray;
+    border: 1px solid #ddd;
+    width: 100px;
+    height: 44px;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.notice > ul {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(158, 158, 158);
+    font-size: 13px;
+}
+.notice > ul > li {
+    padding: 11px 0;
+}
+
+.notice > ul >li:nth-child(even) {
+    background-color: lightpink;
+}
+.notice > ul > li:hover {
+    background-color: rgb(70, 70, 70,0.6);
+}
+.notice > ul > li > a > span
+ {
+    float: right;
+ }
+ .gallery {
+    position: relative;
+
+    display: flex;
+}
+.gallery > a {
+    background-color: lightgray;
+    border: 1px solid #ddd;
+    width: 100px;
+    height: 44px;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+}
+.gallery > ul {
+    background-color: lightgray;
+    padding-top: 40PX;
+    padding-bottom: 40PX;
+    width: 100%;
+    justify-content: space-around;
+    top: 41PX;
+    position: absolute;
+    display: flex;
+}
+.gallery  > ul > li:hover {
+    opacity: 0.5;
+}
+.direct {
+    position: relative;
+}
+.directText {
+    position: absolute;
+    padding: 30px 20px;
+    background-color: rgba(0, 00, 0, 0.4);
+    top: 33%;
+    left: 32%;
+    color: #fff;
+} 
+footer {
+    position: absolute;
+    width: 800px;
+    height: 100px;
+    background-color: lightgrey;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.footerText {
+    width: 500px;
+    text-align: center;
+}
+.sns  {
+    position: absolute;
+top: 0;
+right: 0;
+    width: 300px;
+    height: 50px;
+}
+.sns > ul {
+    display: flex;
+    justify-content: space-around;
+}
+.familysite {
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    padding-top: 15px;
+    right: 0;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+}
+.modalWrap {
+    display: none;
+    position: absolute;
+    left: 13%;
+    top: 20%;
+    background-color: lightpink;
+    width: 500px;
+    height: 200px;
+    text-align: center;
+}
+.modalWrap.active {
+    display: block;
+}
+.modal > h1 {
+    font-size: 36px;
+    font-weight: bold;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+.modal > p {
+    padding-bottom: 20px;
+}
+.btn {
+    width: 50px;
+    height: 30px;
+}
