@@ -39,6 +39,8 @@ header {
     width: 840px;
     height: 100px;
     display: flex;
+    z-index: 10000;
+
 }
 .navi {
     position: absolute;
@@ -48,37 +50,68 @@ header {
     justify-content: space-between;
     display: flex;
     text-align: center;
+
 }
 .navi  > li {
     width: 25%;
+
 }
 
 .mainMenu > a {
     margin-top: 60px;
     background-color: aliceblue;
     padding: 10px 0;
+
 }
 .mainMenu > a:hover {
     background-color: lightblue;
 }
 .subMenu {
+    width: 25%;
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(75, 99, 121);
 
-display: none;
-    background-color: aliceblue;
+}
+.subMenu > ul {
+    background-color: red;
 }
 .subMenu > li {
+
     padding: 15px 0;
+
 
 }
 .subMenu > li:hover {
     background-color: lightblue;
 }
-.slide {
+ .slide {
     position: absolute;
     top: 100px;
+    left: 0;
     width: 100%;
     height: 350px;
     background-color: lightgreen;
+
+} 
+.slideimg1 {
+    width: 100%;
+    height: 350px;
+    background-color: rgb(132, 132, 132);
+
+}
+.slideimg2 {
+
+    width: 100%;
+    height: 350px;
+    background-color: rgb(52, 34, 34);
+
+}
+.slideimg3{
+
+    width: 100%;
+    height: 350px;
+    background-color: rgb(221, 51, 51);
 
 }
 .imgText {

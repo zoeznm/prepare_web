@@ -52,17 +52,17 @@ header {
     border: 1px solid #ddd;
 }
 .subMenu {
-display: none;
     position: absolute;
-    width: 200px;
+
     top: 120px;
     left: 179px;
-    width: 1930px;
+
     text-align: center; 
     border: 1px solid #ddd;
+    z-index: 1;
 }
 .subMenu > ul {
-    width: calc(100% - 200px);
+    width: 1720px;
     display: flex;
     background-color: #fff;
     
@@ -92,6 +92,21 @@ display: none;
     width: 1720px;
     height: 400px;
     background-color: lightsalmon;
+}
+.slide1 {
+    width: 1720px;
+    height: 400px;
+    background-color: lightblue;
+}
+.slide2{
+    width: 1720px;
+    height: 400px;
+    background-color: lightgray;
+}
+.slide3 {
+    width: 1720px;
+    height: 400px;
+    background-color: lightseagreen;
 }
 .imgText {
     position: absolute;

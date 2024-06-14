@@ -51,16 +51,15 @@ header {
     background-color: lightcyan;
 }
 .subMenu {
-    display: none;
     position: absolute;
     display: block;
     left: 200px;
     width: 300px;
     top: 0;
-    background-color: lightseagreen;
+    background-color: rgb(209, 253, 251);
+    z-index: 1;
 }
 .subMenu > li {
-    display: none;
     text-align: center;
     padding: 20px 0 ;
 }
@@ -219,6 +218,27 @@ header {
     width: 1320px;
     height: 960px;
     background-color: rgba(255, 215, 215, 0.973);
+}
+.slide > a{
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+}
+.slideimg1 {
+    width: 1320px;
+    height: 960px;
+    background-color: lightgray;
+}
+.slideimg2 {
+    width: 1320px;
+    height: 960px;
+    background-color: rgb(241, 167, 167);
+}
+.slideimg3 {
+    width: 1320px;
+    height: 960px;
+    background-color: rgb(156, 50, 50);
 }
 .imgText {
     position: absolute;

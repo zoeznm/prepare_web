@@ -53,7 +53,7 @@ header {
     background-color: rgba(255, 255, 255, 0.5);
 }
 .subMenu {
-    display: none; /* 삭제하기 */
+ /* 삭제하기 */
     background-color: #333333;
     display: flex;
     position: absolute;
@@ -63,13 +63,13 @@ header {
     z-index: 1;
 }
 .subMenu > ul {
-    display: none; /* 삭제하기 */
+  /* 삭제하기 */
     width: 25%;
     text-align: center;
 }
 .subMenu > ul > li {
     padding: 20px 0;
-    display: none; /* 삭제하기 */
+    /* 삭제하기 */
 }
 .subMenu > ul > li:hover {
     background-color: rgba(255, 255, 255, 0.5);
@@ -80,12 +80,14 @@ header {
     height: 300px;
     overflow: hidden;
 }
-.slide > ul > li {
+.slide a {
     position: absolute;
     top: 0;
     left: 0;
+    /* ! 너무 중요 ! */
+    overflow: hidden;
 }
-.slide > ul > li > img {
+.slide > a > img {
     height: 100%;
 }
 .imgText {
