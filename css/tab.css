@@ -1,1 +1,72 @@
 @charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: #333;
+}
+a{
+  display: block;
+}
+.contents {
+  width: 1200px;
+  height: 200px;
+  display: flex;
+}
+.contents div {
+  width: 33.3%;
+}
+.tabMenu{ display:flex;}
+
+/*공지사항 갤러리 제목*/
+.tabMenu > li > a{
+	padding:0 10px;
+	min-width: 85px;
+	line-height:30px;
+	font-size:14px;
+	text-align:center;
+	background:#eeeeee;
+	border:1px solid #dddddd;
+}
+.tabMenu > li > a:hover{ background:#f6b62c;}
+
+/* 공지사항과 갤러리 탭 맞닿는 부분에 보더를 없애줌 */
+.tabMenu > li:first-child a{border-right:none;}
+/* 활성화된 탭의 스타일 */
+.tabMenu > li.active > a{ font-weight: bold; background-color:#ffffff;}
+/*탭 콘텐츠 영역 스타일*/
+.tabBG{
+	position:absolute;
+	overflow:hidden;
+	width:462px; /* chrome inspect(검사) 보고 수치 계산 */
+	height:168px; /* chrome inspect(검사) 보고 수치 계산 */
+	background:#ffffff;
+}
+ /*active 클래스가 추가된 탭 콘텐츠 영역 스타일*/
+.tabMenu > li.active div{
+	border:1px solid #dddddd;
+	z-index:1;
+}
+
+ /* 공지사항 */
+.notice ul{ padding:20px 0;}
+.notice ul li{ 
+  padding:8px 20px;
+	margin:0 10px;
+	font-size:14px;
+}
+.notice li:nth-child(even){background:rgba(0,0,0, 0.05);} /*공지사항 리스트 짝수에만 배경 색상 넣기 */
+.notice li:hover{color:#222328;background:rgba(246,182,44, 0.1);}
+.notice li span {float:right;} /* 날짜 오른쪽 정렬 */
+
+/* 갤러리 */
+.gallery{	left:0; }
+.gallery ul {
+	display: flex;
+  justify-content: space-around;
+	align-items: center;
+	height:100%; /*높이 값이 있어야 수직 정렬 됨*/
+}
+.gallery img:hover{ opacity:0.5; }
